@@ -61,16 +61,27 @@ const Login = () => {
         </div>
         <div className='right-side'>
           <p className='right-side-title'>Sign In</p>
-          <div className="form-controller" >
-            <label className="control-label">Email</label>
-            <br />
-            <input type="text" name="profile_email" placeholder="Enter your email" className="field-control" />
-            <br />
-            <label className="control-label">Password</label>
-            <br />
-            <input type="password" name="profile_password" placeholder="Enter your password" className="field-control" />
-            <button className="btn-login" onClick={handleLogin}>Sign In</button>
-          </div>
+          <form>
+            <div className="form-controller" >
+              <div className="field-form" required onChange={(e) => {
+                setFormLogin((prevData) => ({
+                  ...prevData, email: e.target.value
+                }))
+              }}>
+                <label for="email" className="control-label"> Email </label>
+                <input type="email" name="email" id="email" placeholder="Write your email" className="field-control" required />
+              </div>
+              <div className="field-form" required onChange={(e) => {
+                setFormLogin((prevData) => ({
+                  ...prevData, password: e.target.value
+                }))
+              }}>
+                <label for="password" className="control-label"> Password </label>
+                <input type="password" name="email" id="email" placeholder="Write your password" className="field-control" required />
+              </div>
+              <button className="btn-login" onClick={handleLogin}>Sign In</button>
+            </div>
+          </form>
         </div>
       </section>
       <ToastContainer autoClose={2000} />

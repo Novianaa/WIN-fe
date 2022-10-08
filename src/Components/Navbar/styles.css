@@ -9,7 +9,7 @@
 }
 
 .navbar-left {
-  width: 30%;
+  width: 40%;
   justify-content: space-around;
 }
 
@@ -24,17 +24,38 @@
   justify-content: space-between;
 }
 
+.navbar-login-right {
+  width: 60%;
+  text-align: end;
+}
+
 .btn-auth {
-  background-color: cornflowerblue;
+  background-color: #fbb1c1;
   color: white;
   border: none;
   border-radius: 10px;
-  width: 100px;
-  padding: 10%;
+  width: 125px;
+  padding: 6%;
+  font-size: 18px;
+  font-family: 'Mulish';
+  font-weight: 600;
 }
 
 .wrapper-link {
   text-decoration: none;
+  color: black;
+}
+
+.btn-logout {
+  background-color: #fbb1c1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 125px;
+  padding: 2%;
+  font-size: 18px;
+  font-family: 'Mulish';
+  font-weight: 600;
 
 }
 

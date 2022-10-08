@@ -7,9 +7,6 @@
   pointer-events: none;
 }
 
-.d-flex {
-  display: flex;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

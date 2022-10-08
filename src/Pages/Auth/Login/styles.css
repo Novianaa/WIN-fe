@@ -58,6 +58,11 @@
   margin-left: 12%;
 }
 
+.field-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .control-label {
   font-size: 20px;
   font-family: 'Mulish';
