@@ -1,0 +1,93 @@
+.left-side {
+  width: 50%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #fe3e7b, #fbb1c1);
+  border-bottom-right-radius: 100%;
+}
+
+.left-side-header {
+  margin-top: 15%;
+  text-align: center;
+}
+
+.left-side-header-title {
+  font-family: 'Mulish';
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.btn-register {
+  width: 30%;
+  padding: 1.5%;
+  font-family: 'Mulish';
+  font-size: 18px;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  background-color: #000000;
+  color: white;
+  margin: 3% 0;
+}
+
+.btn-register:hover {
+  background-color: #fedce4;
+  color: #272626;
+}
+
+.left-side-bg {
+  width: 75vh;
+  height: 60vh;
+}
+
+.right-side {
+  width: 43%;
+  margin-left: 5%;
+}
+
+.right-side-title {
+  font-family: 'Mulish';
+  font-size: 30px;
+  font-weight: 600;
+  text-align: right;
+  padding: 4%;
+  padding-right: 5%;
+}
+
+.form-controller {
+  border: none !important;
+  margin-left: 12%;
+}
+
+.control-label {
+  font-size: 20px;
+  font-family: 'Mulish';
+  font-weight: 600;
+  margin: 2% 0;
+}
+
+.field-control {
+  width: 80%;
+  border-radius: 20px;
+  height: 50px;
+  padding: 0 2em;
+  color: #444;
+  font-weight: 500;
+  outline: none;
+  background: #f0f0f0;
+  border: none;
+  font-size: 14px;
+  margin: 1% 0;
+}
+
+.btn-login {
+  width: 80%;
+  border-radius: 20px;
+  padding: 1.5%;
+  font-family: 'Mulish';
+  font-size: 18px;
+  font-weight: 800;
+  border: none;
+  background-color: #fd6c9a;
+  color: #f0f0f0;
+  margin: 7% 0;
+}
