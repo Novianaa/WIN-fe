@@ -6,7 +6,7 @@ import Product from './Pages/Product'
 import './index.css'
 import { useEffect } from 'react';
 
-// import PublicRoute from "./Routes/PublicRouter";
+import PublicRouter from "./Routes/PublicRouter";
 
 const MainNavigation = () => {
   useEffect(() => {
@@ -16,10 +16,10 @@ const MainNavigation = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<PublicRouter isRestricted={true}><Home /></PublicRouter>} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/product' element={<Product />} />
+          <Route path='/product' element={<PublicRouter><Product /></PublicRouter>} />
 
         </Routes>
       </BrowserRouter>
